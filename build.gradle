@@ -1,0 +1,38 @@
+buildscript {
+	ext {
+		springBootVersion = "2.0.6.RELEASE"
+		springVersion = "5.0.9.RELEASE"
+		mysqlVersion = "8.0.13"
+	}
+
+	repositories {
+		mavenCentral()
+		jcenter()
+	}
+
+	dependencies {
+		classpath "org.springframework.boot:spring-boot-gradle-plugin:$springBootVersion"
+		classpath "mysql:mysql-connector-java:$mysqlVersion"
+	}
+
+}
+
+subprojects {
+	group = 'io.accenture.components'
+
+	apply plugin: "java"
+	defaultTasks "clean", "build"
+
+	repositories {
+		mavenCentral()
+		jcenter()
+	}
+
+	test {
+		testLogging {
+			exceptionFormat = 'full'
+		}
+	}
+
+}
+
