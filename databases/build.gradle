@@ -1,0 +1,7 @@
+import io.accenture.gradleplugin.CfMigrationPlugin
+import io.accenture.gradleplugin.LocalMigrationPlugin
+
+subprojects {
+    apply plugin: LocalMigrationPlugin
+    apply plugin: CfMigrationPlugin
+}

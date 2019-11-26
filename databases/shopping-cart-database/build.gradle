@@ -1,0 +1,6 @@
+databases {
+    devDatabase = "shopping_cart_dev"
+    testDatabase = "shoping_cart_test"
+    cfDatabase = "shopping-cart-database"
+    cfApp = "shopping-cart"
+}
