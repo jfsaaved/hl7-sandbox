@@ -1,6 +1,7 @@
 rootProject.name = 'hl7-sandbox'
 
 
+include "databases:shopping-item-database"
 include "databases:shopping-cart-database"
 
 include "components:item"

@@ -1,0 +1,11 @@
+applications:
+  - name: items
+    path: ./components/item/build/libs/item.jar
+    routes:
+      - route: item-sc-jfsaaved.cfapps.io
+    memory: 1G
+    instances: 1
+    env:
+      JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
+    services:
+      - shopping-item-database

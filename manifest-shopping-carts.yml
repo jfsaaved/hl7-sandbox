@@ -1,0 +1,11 @@
+applications:
+  - name: shopping-carts
+    path: ./components/shopping-cart/build/libs/shopping-cart.jar
+    routes:
+      - route: shopping-cart-sc-jfsaaved.cfapps.io
+    memory: 1G
+    instances: 1
+    env:
+      JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
+    services:
+      - shopping-cart-database
