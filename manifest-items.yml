@@ -1,5 +1,5 @@
 applications:
-  - name: items
+  - name: shopping-item
     path: ./components/item/build/libs/item.jar
     routes:
       - route: item-sc-jfsaaved.cfapps.io

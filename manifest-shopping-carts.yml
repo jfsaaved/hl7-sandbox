@@ -1,5 +1,5 @@
 applications:
-  - name: shopping-carts
+  - name: shopping-cart
     path: ./components/shopping-cart/build/libs/shopping-cart.jar
     routes:
       - route: shopping-cart-sc-jfsaaved.cfapps.io
